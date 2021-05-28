@@ -9,25 +9,33 @@ public class SwitchScore {
 		int score = sc.nextInt();
 		/*
 		 * 점수 입력을 받으면 아래 등급표에 해당하는 등급을 출력 
-		 * 90~100 A 
-		 * 80~ 89 B 
-		 * 70~ 79 C 
-		 * 50~ 69 D 
+		 * 100   A   10
+		 * 90~99 A    9 
+		 * 80~ 89 B	  8 
+		 * 70~ 79 C   7
+		 * 50~ 69 D   5  6
 		 * 0~ 49 F
 		 */
 		//switch로 변경
-		if (score >= 90) {
+		switch(score/10) {
+		case 10:
+		case 9:
 			System.out.println("A");
-		} else if (score >= 80) {
+			break;
+		case 8:
 			System.out.println("B");
-		} else if (score >= 70) {
+			break;
+		case 7:
 			System.out.println("C");
-		} else if (score >= 50) {
+			break;
+		case 6:
+		case 5:
 			System.out.println("D");
-		} else {
-			System.out.println("F");
+			break;
+		default:
+			System.out.println("D");
+			
 		}
-
 	}
 
 }
