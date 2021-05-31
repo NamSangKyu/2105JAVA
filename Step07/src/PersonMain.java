@@ -25,6 +25,15 @@ public class PersonMain {
 		System.out.println(p3.name);
 		System.out.println(p3.age);
 		
+		//필드 초기화하는 생성자 실행
+		Person p4 = new Person("이관희");
+		System.out.println(p4.name);
+		System.out.println(p4.age);
+		
+		Person p5 = new Person(45);
+		System.out.println(p5.name);
+		System.out.println(p5.age);
+		
 		
 	}
 

@@ -19,7 +19,29 @@ public class Person {
 		name = "임시값";
 		age = 666;
 	}
+	
+	//필드 초기화하는 생성자
+	Person(String n){
+		name = n;
+		age = 777;
+	}
+	//필드 중에 나이를 생성자에서 받아서 초기화하는 생성자, 이름은 임시값 저장
+	Person(int a){
+		age = a;
+		name = "임시값";
+	}
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
