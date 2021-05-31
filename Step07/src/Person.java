@@ -10,4 +10,19 @@ public class Person {
 	String name;
 	//나이
 	int age;
+	
+	//기본 생성자 - default constructor
+	//Person(){} //생성자를 않넣으면 왼쪽과 같은 아무 일도 안하는 기본생성자를 자동으로 추가
+	Person(){
+		System.out.println("Person Default Constructor");
+		//객체를 생성했을때 제일 먼저 해야될 일을 작성
+		name = "임시값";
+		age = 666;
+	}
 }
+
+
+
+
+
+
