@@ -12,7 +12,13 @@ public class PersonMain {
 		d.printPersonInfo();
 		String name = "";
 		System.out.println(name);
-		
+		d.setAge(33);
+		d.printPersonInfo();
+		d.setAge(-20);
+		d.printPersonInfo();
 	}
 
 }
+
+
+

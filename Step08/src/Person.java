@@ -29,7 +29,20 @@ public class Person {
 	}
 	
 	String getFood(){
-		return food;
+		return food;//결과값을 전달하고 메서드가 종료
+		//food = "";//실행되지 않는 무의미한 코드
+	}
+	//이 메서드는 나이를 외부로 부터 받아서 field age에 저장하는 메서드
+	//단 나이를 외부에서 받아서 저장을 할때 나이는 0보다 큰 값만 저장
+	//만약 0이하의 값이 들어오면 값을 저장 못하게끔 처리
+	void setAge(int age) {
+		/*
+		 * if(age > 0) this.age = age;
+		 */
+		if(age < 1)
+			//메서드를 강제 종료(리턴타입이 void이면 전달해줄 값이 없기 때문에 return;으로 처리)
+			return;
+		this.age = age;
 	}
 	
 }
