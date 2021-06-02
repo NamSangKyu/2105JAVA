@@ -7,12 +7,14 @@
  * 		메서드
  * 			학생정보를 출력하는 메서드
  * 				---> 20201111 홍길동 경제학과 3.7(B+)
+ * 
+ * 		private 은 외부에서 접근 불가
  */
 public class Student {
-	String sno;
-	String name;
-	String major;
-	double score;
+	private String sno;
+	private String name;
+	private String major;
+	private double score;
 
 	public Student(String sno, String name, String major, double score) {
 		this.sno = sno;
@@ -22,7 +24,7 @@ public class Student {
 	}
 
 	// 성적 등급을 구하는 메서드
-	String getGrade() {
+	public String getGrade() {
 		String grade = "F";
 		int s = (int) (score / 0.5);
 		switch (s) {
@@ -54,7 +56,7 @@ public class Student {
 		return grade;
 	}
 
-	void printStudentInfo() {
+	public void printStudentInfo() {
 		System.out.println(sno + " " + name + " " + major + " "
 							+ score + "(" + getGrade() + ")");
 	}
