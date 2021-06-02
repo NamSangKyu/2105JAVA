@@ -16,8 +16,25 @@ public class Student {
 		major = "임시학과";
 		score = 1.0;
 	}
+
+	//필드 초기화하는 생성자 작성 학번 이름 학과 평점 모두 초기화
+	public Student(String sno, String name, String major, double score) {
+		super();
+		this.sno = sno;
+		this.name = name;
+		this.major = major;
+		this.score = score;
+	}
+	
+	
+	
+	
 	
 }
+
+
+
+
 
 
 

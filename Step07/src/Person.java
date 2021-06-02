@@ -30,6 +30,12 @@ public class Person {
 		age = a;
 		name = "임시값";
 	}
+	
+	//모든 필드의 데이터를 외부로부터 받아서 초기화하는 생성자
+	Person(String n, int a){
+		name = n;
+		age = a;
+	}
 }
 
 

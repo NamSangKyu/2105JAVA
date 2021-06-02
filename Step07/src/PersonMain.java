@@ -34,6 +34,10 @@ public class PersonMain {
 		System.out.println(p5.name);
 		System.out.println(p5.age);
 		
+		//Person 필드를 모두 초기화하는 생성자
+		Person p6 = new Person("이관희",45);
+		System.out.println(p6.name);
+		System.out.println(p6.age);
 		
 	}
 

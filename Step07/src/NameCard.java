@@ -16,6 +16,42 @@ public class NameCard {
 		address="회사 주소";
 	}
 
+	//이름 회사명 연락처 초기화하는 생성자
+	public NameCard(String name, String company, String tel) {
+		this.name = name;
+		this.company = company;
+		this.tel = tel;
+	}
+
+	//이름 회사명 연락처 이메일 초기화하는 생성자
+	public NameCard(String name, String company, String tel, String email) {
+		super();
+		this.name = name;
+		this.company = company;
+		this.tel = tel;
+		this.email = email;
+	}
+
+	//전체 필드 초기화하는 생성자
+	public NameCard(String name, String company, String tel, String email, String position, String address) {
+		super();
+		this.name = name;
+		this.company = company;
+		this.tel = tel;
+		this.email = email;
+		this.position = position;
+		this.address = address;
+	}
+
+	
 	
 	
 }
+
+
+
+
+
+
+
+

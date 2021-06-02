@@ -13,7 +13,7 @@ public class StudentMain {
 		System.out.println(std1.major);
 		System.out.println(std1.score);
 		
-		std1 = new Student();
+		std1 = new Student("11112222","김철수","게임학과",4.2);
 		System.out.println(std1.sno);
 		System.out.println(std1.name);
 		System.out.println(std1.major);
