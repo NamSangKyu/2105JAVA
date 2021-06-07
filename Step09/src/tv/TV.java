@@ -28,5 +28,35 @@ public class TV {
 		power = false;
 	}
 	
+	public void chUp() {
+		ch++;
+		if(ch > MAX_CHANNEL) ch = MIN_CHANNEL;
+		System.out.println("현재 채널 : "+ch);
+	}
+	public void chDown() {
+		ch--;
+		if(ch < MIN_CHANNEL ) ch = MAX_CHANNEL;
+		System.out.println("현재 채널 : "+ch);
+	}
 	
+	public void volUp() {
+		if(vol < MAX_VOL) vol++;
+		System.out.println("현재 음량 : "+vol);
+	}
+	public void volDown() {
+		if(vol > MIN_VOL) vol--;
+		System.out.println("현재 음량 : "+vol);
+	}
+	
+	public void powerOnOff() {
+		power = !power;
+		if(power)
+			System.out.println("TV 전원 On");
+		else
+			System.out.println("TV 전원 Off");
+			
+	}
 }
+
+
+
