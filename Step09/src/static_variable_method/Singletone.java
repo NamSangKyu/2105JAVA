@@ -2,9 +2,10 @@ package static_variable_method;
 
 public class Singletone {
 	private static Singletone instance = new Singletone();
-
+	private int count;
 	private Singletone() {
 		System.out.println("Singletone Constructor");
+		count++;
 	}
 	
 	public static Singletone getInstance() {
@@ -12,5 +13,9 @@ public class Singletone {
 			instance = new Singletone();
 		return instance;
 	}
-	
+
+	public int getCount() {
+		return count;
+	}
+
 }
