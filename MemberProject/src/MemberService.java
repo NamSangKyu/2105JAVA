@@ -14,6 +14,10 @@ public class MemberService {
 	}
 	//추가
 	public void addMemberVO(Scanner sc) {
+		if(index == arr.length) {
+			System.out.println("더이상 저장할 공간이 없습니다.");
+			return;
+		}
 		String name, tel, email;
 		System.out.println("회원 정보 추가를 시작합니다............");
 		System.out.print("회원명 : ");
@@ -45,10 +49,33 @@ public class MemberService {
 		return null;
 	}
 	//수정
-	
+	public void updateMemberVO(Scanner sc) {
+		System.out.println("회원정보 수정을 시작합니다......");
+		MemberVO vo = searchMemberVO(sc);//수정할 대상을 조회
+		if(vo == null) return;
+		String name, tel, email;
+		System.out.print("수정할 회원명 : ");
+		name = sc.nextLine();//문자열 입력
+		System.out.print("수정할 연락처 : ");
+		tel = sc.nextLine();//문자열 입력
+		System.out.print("수정할 이메일 : ");
+		email = sc.nextLine();//문자열 입력
+		
+		vo.setName(name);
+		vo.setTel(tel);
+		vo.setEmail(email);
+		
+		System.out.println("회원정보 수정이 완료되었습니다.");
+	}
 	//삭제
 	
 	
 	
 	
 }
+
+
+
+
+
+
