@@ -6,6 +6,8 @@ public class ArrayParam {
 			System.out.print(arr[i] + " ");
 		System.out.println("]");
 	}
+	//데이터 타입이 참조형인 경우 매개변수 전달시 원본을 전달이 가능
+	//메서드에서 데이터를 직접적으로 변경이 가능 --> Call By Reference
 	public static void addArray(int[] arr, int n) {
 		for(int i=0;i<arr.length;i++)
 			arr[i] += n;
