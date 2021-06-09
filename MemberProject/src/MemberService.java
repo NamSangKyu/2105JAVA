@@ -27,7 +27,25 @@ public class MemberService {
 		System.out.println("데이터 추가 완료");
 	}
 	//검색
+	public MemberVO searchMemberVO(Scanner sc) {
+		//검색할 이름
+		String name;
+		System.out.println("회원 정보 검색을 시작합니다.........");
+		System.out.println("검색할 회원명 : ");
+		name = sc.nextLine();
+		
+		for (int i = 0; i < index; i++) {
+			if(arr[i].getName().equals(name)) {
+				System.out.println("검색 결과");
+				arr[i].printInfo();
+				return arr[i];
+			}
+		}
+		System.out.println("검색 결과 없음");
+		return null;
+	}
 	//수정
+	
 	//삭제
 	
 	
