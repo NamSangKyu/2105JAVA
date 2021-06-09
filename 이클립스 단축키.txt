@@ -2,3 +2,8 @@ System.out.println(); 완성 ---> sysout 작성후 Ctrl + space
 해당 라인 또는 드래그한 라인을 위나 아래로 동일하게 복제 ---> Ctrl + Alt + ↑, Ctrl + Alt + ↓
 해당 라인 또는 드래그한 라인을 위나 아래로 이동 ---> Alt + ↑, Alt + ↓
 전체 변수명 변경 --> Alt + Shift + R --> 변수명 다시입력 --> 엔터
+Alt + Shift + S --> 클래스 소스 메뉴 
+
+Alt + Shift + S  -> R  ---> set/get 메서드 생성창
+Alt + Shift + S  -> C  ---> 기본생성자 생성창
+Alt + Shift + S  -> O  ---> 필드생성자 생성창
