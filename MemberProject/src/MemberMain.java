@@ -30,6 +30,9 @@ public class MemberMain {
 			case "delete":
 				service.deleteMemberVO(sc);
 				break;
+			case "all":
+				service.allPrintMemberVO();
+				break;
 			case "exit":
 				System.out.println("프로그램 종료합니다....");
 				return;

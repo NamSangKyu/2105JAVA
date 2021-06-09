@@ -87,8 +87,16 @@ public class MemberService {
 		}
 		System.out.println("삭제할 데이터가 없습니다.");
 	}
-	
-	
+	public void allPrintMemberVO() {
+		System.out.println("전체 회원정보 출력을 시작합니다.....");
+		if(index == 0) {
+			System.out.println("등록된 회원 정보가 없습니다.");
+			return;
+		}
+		
+		for(int i=0;i<index;i++)
+			arr[i].printInfo();
+	}
 	
 }
 
